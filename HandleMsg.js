@@ -508,7 +508,7 @@ module.exports = HandleMsg = async (aruga, message) => {
 				if (res.status == 'error') return aruga.sendFileFromUrl(from, link, '', 'Maaf url anda tidak dapat ditemukan', id)
 				await aruga.sendFileFromUrl(from, linkhd, '', 'Nih ngab videonya', id)
 				.catch(async () => {
-					await aruga.sendFileFromUrl(from, linksd, '', 'Nih ngab videonya', id)
+					await aruga.sendFileFromUrl(from, linksd, '', 'Nih ngab videony', id)
 					.catch(() => {
 						aruga.reply(from, 'Maaf url anda tidak dapat ditemukan', id)
 					})
